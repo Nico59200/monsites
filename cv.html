@@ -1,0 +1,249 @@
+<!-- Source(s): :contentReference[oaicite:0]{index=0} :contentReference[oaicite:1]{index=1} -->
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CV — CARDOEN-DURNEZ Nicolas</title>
+  <style>
+    :root{
+      --accent:#0b6b63;
+      --muted:#6b7280;
+      --paper:#f7f9fb;
+      --text:#0f1724;
+      font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:linear-gradient(180deg, #ffffff 0%, var(--paper) 100%);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:32px;
+      display:flex;
+      justify-content:center;
+      font-size:15px;
+    }
+
+    .container{
+      width:900px;
+      background:white;
+      border-radius:12px;
+      box-shadow:0 8px 30px rgba(15,23,36,0.08);
+      overflow:hidden;
+      display:grid;
+      grid-template-columns: 1fr 2fr;
+    }
+
+    /* Left column */
+    .panel{
+      background:linear-gradient(180deg, rgba(11,107,99,0.06), rgba(11,107,99,0.03));
+      padding:28px;
+      min-height:100%;
+    }
+    .name{
+      font-size:22px;
+      font-weight:700;
+      color:var(--accent);
+      margin:0 0 6px 0;
+    }
+    .role{
+      font-size:13px;
+      color:var(--muted);
+      margin:0 0 16px 0;
+    }
+    .contact p{
+      margin:8px 0;
+      font-size:13px;
+      color:var(--text);
+      line-height:1.35;
+    }
+    .label{
+      display:block;
+      font-size:12px;
+      color:var(--muted);
+      margin-top:12px;
+      margin-bottom:6px;
+      font-weight:600;
+    }
+    .skill-list, .info-list{
+      list-style:none;
+      padding:0;
+      margin:0;
+    }
+    .skill-list li, .info-list li{
+      margin:8px 0;
+      font-size:14px;
+    }
+    .lang-prog{
+      display:flex;
+      gap:8px;
+      flex-direction:column;
+    }
+    .pill{
+      display:inline-block;
+      padding:6px 10px;
+      border-radius:999px;
+      background:rgba(11,107,99,0.12);
+      color:var(--accent);
+      font-weight:600;
+      font-size:13px;
+    }
+
+    /* Right column */
+    .main{
+      padding:28px;
+    }
+    h2{
+      margin:0 0 10px 0;
+      font-size:16px;
+      color:var(--text);
+    }
+    p.lead{
+      margin:6px 0 18px 0;
+      color:var(--muted);
+      line-height:1.5;
+    }
+    .section{
+      margin-bottom:18px;
+    }
+    .bulleted{
+      margin:8px 0 0 0;
+      padding-left:18px;
+    }
+    .education-item, .exp-item{
+      margin-bottom:12px;
+    }
+    .meta{
+      font-size:13px;
+      color:var(--muted);
+    }
+    .tag{
+      display:inline-block;
+      padding:4px 8px;
+      border-radius:6px;
+      background:#eef7f5;
+      color:var(--accent);
+      font-weight:600;
+      font-size:12px;
+      margin-left:8px;
+    }
+
+    footer{
+      margin-top:22px;
+      font-size:12px;
+      color:var(--muted);
+    }
+
+    /* Responsive */
+    @media (max-width:800px){
+      .container{width:100%; grid-template-columns:1fr}
+      .panel{order:2}
+      .main{order:1}
+    }
+  </style>
+</head>
+<body>
+  <article class="container" aria-labelledby="nom-cv">
+    <aside class="panel" aria-label="Informations personnelles">
+      <h1 id="nom-cv" class="name">CARDOEN-DURNEZ Nicolas</h1>
+      <div class="role">Étudiant en informatique — BTS SIO (en cours)</div>
+
+      <div class="contact" aria-label="Coordonnées">
+        <span class="label">Contact</span>
+        <p>Tourcoing, France</p>
+        <p>Téléphone : <strong>06 36 14 32 90</strong></p>
+        <p>E-mail : <strong>nicolas-parcoursup@outlook.com</strong></p>
+      </div>
+
+      <div class="section" aria-label="Compétences techniques">
+        <span class="label">Compétences</span>
+        <ul class="skill-list">
+          <li>💻 <strong>Langages :</strong> HTML, CSS, Python</li>
+          <li>🛠️ <strong>Outils :</strong> Visual Studio Code, Notepad++</li>
+          <li>🌐 <strong>Réseaux :</strong> Configuration de base, adressage IP (option SISR)</li>
+          <li>🖥️ <strong>Systèmes :</strong> Windows, Linux</li>
+        </ul>
+      </div>
+
+      <div class="section" aria-label="Compétences générales">
+        <span class="label">Savoir-être</span>
+        <ul class="info-list">
+          <li>Résolution de problèmes</li>
+          <li>Travail en équipe</li>
+          <li>Esprit logique et analytique</li>
+          <li>Bonne capacité d’adaptation</li>
+        </ul>
+      </div>
+
+      <div class="section" aria-label="Langues">
+        <span class="label">Langues</span>
+        <ul class="info-list lang-prog">
+          <li>Anglais — Débutant</li>
+          <li>Espagnol — Intermédiaire</li>
+        </ul>
+      </div>
+
+      <div class="section" aria-label="Centres d'intérêt">
+        <span class="label">Centres d'intérêt</span>
+        <ul class="info-list">
+          <li>Cinéma</li>
+          <li>Cuisine</li>
+          <li>Lecture</li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="main" aria-label="Résumé et parcours">
+      <section class="section" aria-labelledby="accroche">
+        <h2 id="accroche">Profil</h2>
+        <p class="lead">
+          Étudiant en BTS SIO, je suis à la recherche d’un stage dans le domaine de l’informatique afin de mettre en pratique mes compétences en développement, réseaux et systèmes, et d'acquérir une expérience professionnelle solide.
+        </p>
+      </section>
+
+      <section class="section" aria-labelledby="formation">
+        <h2 id="formation">Formations</h2>
+
+        <div class="education-item">
+          <div><strong>2025 - 2027 (en cours)</strong> <span class="meta">— BTS SIO (Services Informatiques aux Organisations), Lycée Gaston Berger, Lille</span></div>
+          <div class="bulleted">
+            <ul>
+              <li>Réalisation de plusieurs sites web personnels/projets : conception, développement et mise en ligne.</li>
+              <li>Maîtrise des langages HTML & CSS.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="education-item">
+          <div><strong>2022 - 2025</strong> <span class="meta">— Baccalauréat général (mention assez bien), Lycée Colbert, Tourcoing</span></div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="diplomes">
+        <h2 id="diplomes">Diplômes</h2>
+        <p class="meta">Baccalauréat général — mention assez bien.</p>
+      </section>
+
+      <section class="section" aria-labelledby="experience">
+        <h2 id="experience">Expérience professionnelle</h2>
+        <p class="meta">(Aucune expérience détaillée fournie dans le document source.)</p>
+        <p class="lead">À compléter selon vos expériences : jobs étudiants, projets, stages ou missions techniques.</p>
+      </section>
+
+      <section class="section" aria-labelledby="projets">
+        <h2 id="projets">Projets</h2>
+        <ul class="bulleted">
+          <li>Création de sites web personnels et projets scolaires (HTML/CSS, déploiement).</li>
+          <li>Projets liés aux modules réseaux et systèmes dans le cadre du BTS.</li>
+        </ul>
+      </section>
+
+      <footer>
+        <div>Informations extraites et reformattées à partir du CV fourni par l'utilisateur.</div>
+      </footer>
+    </main>
+  </article>
+</body>
+</html>
